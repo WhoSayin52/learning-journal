@@ -1,5 +1,15 @@
-html, 
-body {
-    margin: 0;
+:root {
+    --white: #EEEEEE;
+    --grey: #505050;
+    --black: #141414;
+    --dark-black: #0E0E0E;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
+    border: none;
 }
