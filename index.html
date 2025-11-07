@@ -1,18 +1,25 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Learning Journal</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <img class="icon" src="images/icon.png">
+    <header class="flex-row">
+        <div class="header-icon-title-container flex-row">
+            <img class="header-icon" src="images/icon.png">
             <h3 class="header-title">My learning journal</h3>
         </div>
         <nav>
-            <ul class="nav-list">
+            <ul class="nav-list flex-row">
                 <li class="nav-list-item"><a>Home</a></li>
                 <li class="nav-list-item"><a>About Me</a></li>
             </ul>
@@ -20,8 +27,8 @@
     </header>
 
     <main>
-        <section class="hero">
-            <time>July 23, 2022</time>
+        <section class="hero flex-col">
+            <time class="hero-time">July 23, 2022</time>
             <h1 class="hero-title">My new journey as a bootcamp student.</h1>
             <p class="hero-text">
                 After several months of learning in the Frontend Developer Career Path, I've made the
@@ -29,39 +36,67 @@
                 like-minded peers.</p>
         </section>
 
-        <section class="content">
-            <article class="blog one">
+        <section class="content grid">
+            <article class="blog flex-col">
                 <img class="blog-img" src="images/blog1.png">
-                <time>July 23, 2022</time>
+                <time class="blog-time">July 23, 2022</time>
                 <h2 class="blog-title">Blog one</h2>
                 <p class="blog-text">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
                     learning in the Frontend Developer Career Path.</p>
             </article>
 
-            <article class="blog two">
-                <img class="blog-img" src="images/blog1.png">
-                <time>July 23, 2022</time>
+            <article class="blog flex-col">
+                <img class="blog-img" src="images/blog2.png">
+                <time class="blog-time">July 23, 2022</time>
                 <h2 class="blog-title">Blog two</h2>
                 <p class="blog-text">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
                     learning in the Frontend Developer Career Path.</p>
             </article>
 
-            <article class="blog three">
-                <img class="blog-img" src="images/blog1.png">
-                <time>July 23, 2022</time>
+            <article class="blog flex-col">
+                <img class="blog-img" src="images/blog3.png">
+                <time class="blog-time">July 23, 2022</time>
+                <h2 class="blog-title">Blog three</h2>
+                <p class="blog-text">
+                    I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
+
+            <article class="blog flex-col hidden-blog">
+                <img class="blog-img" src="images/blog4.png">
+                <time class="blog-time">July 23, 2022</time>
+                <h2 class="blog-title">Blog three</h2>
+                <p class="blog-text">
+                    I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
+
+            <article class="blog flex-col hidden-blog">
+                <img class="blog-img" src="images/blog5.png">
+                <time class="blog-time">July 23, 2022</time>
+                <h2 class="blog-title">Blog three</h2>
+                <p class="blog-text">
+                    I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
+
+            <article class="blog flex-col hidden-blog">
+                <img class="blog-img" src="images/blog6.png">
+                <time class="blog-time">July 23, 2022</time>
                 <h2 class="blog-title">Blog three</h2>
                 <p class="blog-text">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of
                     learning in the Frontend Developer Career Path.</p>
             </article>
         </section>
-        <a>View More</a>
+
+        <button class="view-more-button">View More</button>
     </main>
 
-    <footer>
-        <h4>My Learning Journal</h4>
+    <footer class="flex-col">
+        <h3>My Learning Journal</h3>
         <p>Copyright ©2022</p>
     </footer>
 
